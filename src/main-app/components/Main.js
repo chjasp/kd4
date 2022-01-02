@@ -15,9 +15,11 @@ const Main = ({ position, setPosition }) => {
   };
 
   let backbigstyle = {
-    width: "100px",
+    padding: "0.5rem",
     position: "absolute",
-    marginLeft: "3rem",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     fontWeight: "900",
     height: "1.7rem",
     marginTop: "0.3rem",
@@ -34,14 +36,14 @@ const Main = ({ position, setPosition }) => {
     <div className="div-wrapper">
           <TransformWrapper
             initialScale={1}
-            minScale={0.2}
+            minScale={0.3}
             initialPositionX={-500}
             initialPositionY={-500}
+            limitToBounds={false}
             className={`${openMap ? undefined : "hidden"}`}
           >
             <TransformComponent>
               <div className={`map fadein ${openMap ? undefined : "hidden"}`}>
-                /*{" "}
                 <a
                   class="intro-banner-vdo-play-btn pinkBg"
                   style={radarStyle}
@@ -55,8 +57,7 @@ const Main = ({ position, setPosition }) => {
                   <span class="ripple pinkBg"></span>
                   <span class="ripple pinkBg"></span>
                   <span class="ripple pinkBg"></span>
-                </a>{" "}
-                */
+                </a>
                 {data.map((shoe, idx) => {
                   let indivStyle = {
                     position: "absolute",
@@ -69,7 +70,7 @@ const Main = ({ position, setPosition }) => {
                     <img
                       className="pic"
                       style={indivStyle}
-                      src={`./shoes_small/${shoe.name}.jpg`}
+                      src={`./assets/main-app/shoes_small/${shoe.name}.jpg`}
                     />
                   );
                 })}

@@ -6,7 +6,7 @@ const Card = ( {id, handleChoice} ) => {
   return (
     <div className="card-wrapper">
       <p className="progress">Personalization: </p> 
-      <img className="pic-front" src={`./shoes/${id}.jpg`} />
+      <img className="pic-front" src={`./assets/main-app/shoes/${id}.jpg`} />
       <ButtonBar id={id} handleChoice={handleChoice} />
     </div>
   );

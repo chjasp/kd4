@@ -1,6 +1,8 @@
 .outer-wrap {
     height: 80vh;
     width: 300px;
+    /* height: 80vh;
+    width: 300px; */
     border-radius: 3rem;
 
     display: flex;

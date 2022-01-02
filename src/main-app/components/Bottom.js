@@ -65,14 +65,13 @@ const Bottom = ({ openMap, currentId, currentLikes, currentDislikes, currentSupe
   };
 
   let backbtnstyle = {
-    display: `${frontBack ? "none" : "block"}`,
-    width: "20%",
+    //display: `${frontBack ? "none" : "block"}`,
+    padding: "0.4rem",
     fontWeight: "600",
     height: "1.7rem",
-    marginRight: "0.6rem",
-    marginLeft: "0.6rem",
+    marginRight: "1rem",
+    marginLeft: "1rem",
     borderRadius: "0.8rem",
-    background: "white",
     boxShadow: "rgb(47, 149, 193) 0px 7px 20px -8px",
     color: "rgb(47, 149, 193)",
     textAlign: "center",
@@ -108,7 +107,7 @@ const Bottom = ({ openMap, currentId, currentLikes, currentDislikes, currentSupe
               <img
                 className="pic"
                 style={indivStyle}
-                src={`./shoes/${shoe.name}.jpg`}
+                src={`./assets/main-app/shoes/${shoe.name}.jpg`}
               />
             );
           })}
